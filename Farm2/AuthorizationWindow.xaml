@@ -1,0 +1,16 @@
+﻿<Window x:Class="Farm2.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="250" Width="300">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Авторизация" FontSize="18" HorizontalAlignment="Center" Margin="0 0 0 10"/>
+            <TextBox x:Name="UsernameTextBox" Margin="0 0 0 10" Text="Введите имя пользователя" GotFocus="UsernameTextBox_GotFocus" LostFocus="UsernameTextBox_LostFocus"/>
+            <PasswordBox x:Name="PasswordBox" Margin="0 0 0 10" Password="Введите пароль" GotFocus="PasswordBox_GotFocus" LostFocus="PasswordBox_LostFocus"/>
+            <Button Content="Войти" Click="LoginButton_Click" Width="100"/>
+            <TextBlock x:Name="LoginStatusTextBlock" Margin="0 10"/>
+            <!-- Кнопка Назад -->
+            <Button Content="Назад" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
